@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+/*Kontener na graczy*/
+.players {
+	background-color: #488027;
+	height: 100vh;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Ogólne style dla pojedynczych graczy*/
+.players__player {
+	flex-grow: 1;
+}
+
+/*Ogólny styl dla nagłówka w polu gracza*/
+.player__header {
+	height: 15vh;
+	font-size: 5vh;
+	text-align: center;
+	line-height: 15vh;
+	color: #fff;
+}
+
+/*Style szczegółowe dla nagłówków*/
+.player1__header {
+	background-color: #257F9E;
+}
+
+.player2__header {
+	background-color: #B24443;
+}
+
+/*Ogólny styl dla punktów w polu gracza*/
+.player__points {
+	height: 35vh;
+	font-size: 20vh;
+	text-align: center;
+	line-height: 35vh;
+}
+
+/*Style szczegółowe dla punktów*/
+.player1__points {
+	background-color: #3EC5F3;
+}
+.player2__points {
+	background-color: #FF615F;
+}
+
+/*Kontener na planszę do gry*/
+.container {
+	background-color: #333;
+	height: 100vh;
+	float: left;
+	flex-grow: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Plansza do gry*/
+.container__board {
+	width: 70vmin;
+	height: 60vmin;
+	background-color: #49271D;
+}
+
+/*Pojedyncze pole na planszy*/
+.container__field {
+	box-sizing: border-box;
+	width: 8vmin;
+	height: 8vmin;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 1vmin;
+	text-align: center;
+	float: left;
+}
+
+/*Klasy wstawiające kolorowe koła*/
+.red {
+	background-color: #FF615F;
+}
+
+.blue {
+	background-color: #3EC5F3;
+}
+
+/*Klasa dla nazwy aktywnego gracza*/
+.active {
+	font-weight: 700;
+	text-shadow: 0 0 5px #333;
+}
